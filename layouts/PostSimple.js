@@ -28,7 +28,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
       <article>
         <div>
           <header className="relative">
-            <div className="h-60 w-full rounded-lg  bg-[url('/static/stacked-steps-haikei-winner.svg')]">
+            <div className="h-60 w-full rounded-lg  bg-[url('/static/rocket2.svg')]">
               <div className="absolute bottom-0 left-0 space-y-1 p-6 text-left">
                 <div>
                   <PageTitle>{title}</PageTitle>
