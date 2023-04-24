@@ -20,7 +20,7 @@ export default function About({ authorDetails, posts }) {
 
   return (
     <>
-      <AuthorsNavLayout>
+      {/* <AuthorsNavLayout> */}
         <div>
           <div>
             <MDXLayoutRenderer
@@ -28,6 +28,7 @@ export default function About({ authorDetails, posts }) {
               mdxSource={mdxSource}
               frontMatter={frontMatter}
             />
+            <div className="ml-auto pb-4 xl:pt-8 text-base font-medium leading-6 text-gray-500 dark:text-gray-400">Posts by Viktor</div>
             <ul>
               {!posts.length && 'No posts found.'}
               {posts.slice(0, MAX_DISPLAY).map((frontMatter) => {
@@ -69,8 +70,8 @@ export default function About({ authorDetails, posts }) {
               })}
             </ul>
           </div>
-        </div>{' '}
-      </AuthorsNavLayout>
+        </div>
+      {/* </AuthorsNavLayout> */}
     </>
   )
 }
