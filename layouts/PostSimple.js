@@ -29,7 +29,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
       <article>
         <div>
           <header className="relative">
-            <div className="h-60 w-full rounded-lg anim-bg">
+            <div className="h-60 w-full rounded-lg bg-gradient-to-br from-[#cc6b8e] via-[#f18271] to-[#f3a469]">
               <div className="absolute bottom-0 left-0 space-y-1 p-6 text-left">
                 <div>
                   <PageTitle>{title}</PageTitle>

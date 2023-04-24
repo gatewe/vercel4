@@ -51,6 +51,19 @@
     background-size: 400% 400%;
     @apply animate-anim-bg;
   }
+
+  .post-header-bg {
+    background: -webkit-linear-gradient(
+      -45deg,
+      #f7c978 0%,
+      #f3a469 25%,
+      #f18271 50%,
+      #cc6b8e 75%,
+      #a86aa4 100%,
+      );
+      background-size: 100% 100%;
+  }
+
 }
 
 .task-list-item::before {
