@@ -30,7 +30,7 @@ export default function MartinMacko({ authorDetails, posts }) {
               mdxSource={mdxSource}
               frontMatter={frontMatter}
             />
-            <div className="ml-auto pb-4 xl:pt-8 text-base font-medium leading-6 text-gray-500 dark:text-gray-400">Posts by Martin</div>
+            <div className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 pt-12 pb-4">Posts by Martin</div>
             <ul>
               {!posts.length && 'No posts found.'}
               {posts.slice(0, MAX_DISPLAY).map((frontMatter) => {

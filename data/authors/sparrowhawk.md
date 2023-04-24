@@ -1,8 +1,8 @@
 ---
-name: Sparrow Hawk
+name: Viktor Ducky
 avatar: /static/images/sparrowhawk-avatar.jpg
-occupation: Wizard of Earthsea
-company: Earthsea
+occupation: IAM Expert
+# company: Earthsea
 twitter: https://twitter.com/sparrowhawk
 linkedin: https://www.linkedin.com/sparrowhawk
 ---
