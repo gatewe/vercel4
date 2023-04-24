@@ -22,7 +22,7 @@ const AuthorsNavLayout = ({ children }) => {
   return (
     <div>
       <header className="relative">
-        <div className="h-60 w-full rounded-lg  bg-[url('/static/low-poly-grid-haikei.svg')]">
+        <div className="h-60 w-full rounded-lg  bg-[url('/static/desk.svg')]">
           <div className="absolute bottom-0 left-0 space-y-1 p-6 text-left">
             <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
               Authors

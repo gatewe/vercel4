@@ -21,6 +21,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
   const { slug, fileName, date, title, tags } = frontMatter
   // bg-[#41BAEC] dark:bg-[#bc6223]
   // bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-cyan-500 to-violet-300
+  //bg-[url('/static/rocket.svg')]
   return (
     <SectionContainer>
       <BlogSEO url={`${siteMetadata.siteUrl}/blog/${frontMatter.slug}`} {...frontMatter} />
@@ -28,7 +29,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
       <article>
         <div>
           <header className="relative">
-            <div className="h-60 w-full rounded-lg  bg-[url('/static/rocket2.svg')]">
+            <div className="h-60 w-full rounded-lg anim-bg">
               <div className="absolute bottom-0 left-0 space-y-1 p-6 text-left">
                 <div>
                   <PageTitle>{title}</PageTitle>

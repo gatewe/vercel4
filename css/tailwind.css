@@ -3,28 +3,45 @@
 @tailwind utilities;
 
 @layer components {
-    .type-writer::after{
-        content: "";
-        display: inline-block;
-        margin-bottom: -2px;
-        margin-left: 5px;
-        @apply animate-cursor-blink bg-gray-900 dark:bg-white h-[30px] sm:h-[40px] w-[7px] sm:w-[8px];
-    }
-    
-    .gradient-border-bg-dark {
-      background: linear-gradient(#171717, #171717) padding-box,
-        linear-gradient(45deg, #ec4899, #ef4444, #eab308) border-box;
-      border: 2px solid transparent;
-      border-radius: 25px;
-      @apply px-2.5 py-0.5;
-    }
-    .gradient-border-bg-white {
-      background: linear-gradient(#fff, #fff) padding-box,
-        linear-gradient(45deg, #ec4899, #ef4444, #eab308) border-box;
-      border: 2px solid transparent;
-      border-radius: 25px;
-      @apply px-2.5 py-0.5;
-    }
+  .type-writer::after {
+    content: '';
+    display: inline-block;
+    margin-bottom: -2px;
+    margin-left: 5px;
+    @apply h-[30px] w-[7px] animate-cursor-blink bg-gray-900 dark:bg-white sm:h-[40px] sm:w-[8px];
+  }
+
+  .gradient-border-bg-dark {
+    background: linear-gradient(#171717, #171717) padding-box,
+      linear-gradient(45deg, #ec4899, #ef4444, #eab308) border-box;
+    border: 2px solid transparent;
+    border-radius: 25px;
+    @apply px-2.5 py-0.5;
+  }
+  .gradient-border-bg-white {
+    background: linear-gradient(#fff, #fff) padding-box,
+      linear-gradient(45deg, #ec4899, #ef4444, #eab308) border-box;
+    border: 2px solid transparent;
+    border-radius: 25px;
+    @apply px-2.5 py-0.5;
+  }
+
+  .anim-bg {
+    background: linear-gradient(
+      -45deg,
+      #3f51b1 0%,
+      #5a55ae 13%,
+      #7b5fac 25%,
+      #8f6aae 38%,
+      #a86aa4 50%,
+      #cc6b8e 62%,
+      #f18271 75%,
+      #f3a469 87%,
+      #f7c978 100%
+    );
+    background-size: 400% 400%;
+    @apply animate-anim-bg;
+  }
 }
 
 .task-list-item::before {
@@ -36,7 +53,7 @@
 }
 
 .footnotes {
-  @apply pt-8 mt-12 border-t border-gray-200 dark:border-gray-700;
+  @apply mt-12 border-t border-gray-200 pt-8 dark:border-gray-700;
 }
 
 .csl-entry {
