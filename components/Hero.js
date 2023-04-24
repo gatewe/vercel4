@@ -1,7 +1,7 @@
 export default function Hero() {
   //  bg-white shadow dark:border-gray-700 dark:bg-gray-800 bg-gray-700 
   return (
-    <div className="max-w overflow-hidden rounded-lg border border-gray-200 hover:shadow-[0_0_12px_rgba(0,0,0,0.6)] hover:shadow-fuchsia-400/20 dark:border-gray-700 bg-[url('/static/hackers-resized-min.svg')] bg-bottom bg-opacity-50 h-[500px]">
+    <div className="max-w overflow-hidden rounded-lg border border-gray-200 shadow-[0_0_12px_rgba(0,0,0,0.6)] shadow-fuchsia-400/20 dark:border-gray-700 bg-[url('/static/hackers-resized-min.svg')] bg-bottom bg-opacity-50 h-[500px]">
       <div className="bg-gray-700 pt-2 pb-2">
         <div className="position-absolute ml-4">
           <div className="mr-2 inline-block h-3 w-3 rounded-full bg-red-500"></div>
