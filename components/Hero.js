@@ -11,7 +11,7 @@ export default function Hero() {
       </div>
       <div className="min-w-screen m-4 grid basis-full items-center justify-center">
         <div className="flex flex-col items-start justify-between xl:flex-row">
-          <div className="flex flex-col text-4xl sm:text-5xl md:text-5xl">
+          <div className="flex flex-col text-5xl sm:text-6xl md:text-6xl">
             <span className="font-semibold uppercase text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">Welcome to Compaas!</span>
             <p className="type-writer font-semibold uppercase">Scroll down to see latest cloud security blog posts</p>
           </div>
