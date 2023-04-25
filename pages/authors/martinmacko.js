@@ -32,8 +32,8 @@ export default function MartinMacko({ authorDetails, posts }) {
           />
           {/* <div className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400 pt-8 pb-4">Posts by Martin</div> */}
           <div className="pt-4 pb-4">
-            <fieldset class="border-t-[0.5px] border-gray-700">
-              <legend class="ml-auto pl-4 text-2xl font-bold leading-8 tracking-tight text-gray-900 dark:text-gray-100">
+            <fieldset class="border-t border-gray-700">
+              <legend class="ml-auto pl-4 text-xl font-bold leading-8 tracking-tight text-gray-900 dark:text-gray-100">
                 Posts by Martin
               </legend>
             </fieldset>
