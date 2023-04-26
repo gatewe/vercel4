@@ -29,7 +29,7 @@ export default function AuthorLayout({ children, frontMatter }) {
             </div>
           </div>
           {/* <div className="prose max-w-none pt-8 pb-8 dark:prose-dark xl:col-span-2">{children}</div> */}
-          <div className="ml-6 pt-12 xl:ml-0 xl:mr-0 xl:pt-0 xl:translate-y-1/4 xl:-translate-x-1/3 xl:col-span-2">
+          <div className="ml-5 pt-12 xl:ml-0 xl:mr-0 xl:pt-0 xl:translate-y-1/4 xl:-translate-x-1/3 xl:col-span-2">
             <blockquote className="relative">
               <svg
                 class="absolute top-0 left-0 h-16 w-16 -translate-x-6 -translate-y-8 transform text-gray-100 dark:text-gray-700"
