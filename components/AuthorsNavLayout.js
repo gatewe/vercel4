@@ -21,19 +21,6 @@ const ActiveLink = ({ children, href, className }) => {
 const AuthorsNavLayout = ({ children }) => {
   return (
     <div>
-      {/* <header className="relative">
-        <div className="h-60 w-full rounded-lg  bg-[url('/static/desk.svg')]">
-          <div className="absolute bottom-0 left-0 space-y-1 p-6 text-left">
-            <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
-              Authors
-            </h1>
-          </div>
-        </div>
-      </header> */}
-      {/* <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
-        Authors
-      </h1> */}
-      
       <div className="text-gray-400">Authors</div>
       <div className="border-b border-gray-300 pt-6 text-center text-sm font-medium text-gray-500 dark:border-gray-700 dark:text-gray-400">
         <ul className="-mb-px flex flex-wrap">
@@ -44,7 +31,6 @@ const AuthorsNavLayout = ({ children }) => {
           <ActiveLink href="/authors/viktorducky">Viktor Ducky</ActiveLink>
         </ul>
       </div>
-
       <div>{children}</div>
     </div>
   )

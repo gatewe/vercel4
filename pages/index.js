@@ -6,9 +6,6 @@ import { getAllFilesFrontMatter } from '@/lib/mdx'
 import formatDate from '@/lib/utils/formatDate'
 import Hero from '@/components/Hero'
 import HomeWrapper from '@/components/HomeWrapper'
-import Header from '@/components/Header'
-import SectionContainer from '@/components/SectionContainer'
-
 import NewsletterForm from '@/components/NewsletterForm'
 
 const MAX_DISPLAY = 5
@@ -45,10 +42,6 @@ export default function Home({ posts }) {
                       <dl>
                         <dt className="sr-only">Published on</dt>
                         <dd className="flex items-center justify-between text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
-                          {/* <span className="text-signature px-2.5 py-0.5 rounded-full dark:text-signature border border-signature mt-2">Azure security</span> 
-                        <div className="overflow-hidden p-0.5 rounded-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500">
-                          <span className="text-signature px-2.5 py-0.5 rounded-full bg-white dark:bg-gray-900">Azure security</span>
-                         </div> */}
                           <span className="gradient-border-bg-white dark:gradient-border-bg-dark text-sm font-semibold text-signature">
                             {category}
                           </span>

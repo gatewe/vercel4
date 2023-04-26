@@ -3,9 +3,6 @@ import { getAllFilesFrontMatter, getFileBySlug } from '@/lib/mdx'
 import Tag from '@/components/Tag'
 import Link from '@/components/Link'
 import formatDate from '@/lib/utils/formatDate'
-import { useEffect } from 'react'
-import { useRouter } from 'next/router'
-import AuthorsNavLayout from '@/components/AuthorsNavLayout'
 
 const MAX_DISPLAY = 5
 const DEFAULT_LAYOUT = 'AuthorLayout'
@@ -20,9 +17,9 @@ export async function getStaticProps() {
 export default function MartinMacko({ authorDetails, posts }) {
   const { mdxSource, frontMatter } = authorDetails
 
+  console.log("MDXSOURCE: " + authorDetails)
   return (
     <>
-      {/* <AuthorsNavLayout> */}
       <div>
         <div>
           <MDXLayoutRenderer
@@ -30,10 +27,9 @@ export default function MartinMacko({ authorDetails, posts }) {
             mdxSource={mdxSource}
             frontMatter={frontMatter}
           />
-          {/* <div className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400 pt-8 pb-4">Posts by Martin</div> */}
           <div className="pt-4 pb-4">
-            <fieldset class="border-t border-gray-700">
-              <legend class="ml-auto pl-4 text-xl font-bold leading-8 tracking-tight text-gray-900 dark:text-gray-100">
+            <fieldset className="border-t border-gray-700">
+              <legend className="ml-auto pl-4 text-xl font-bold leading-8 tracking-tight text-gray-900 dark:text-gray-100">
                 Posts by Martin
               </legend>
             </fieldset>
@@ -80,7 +76,6 @@ export default function MartinMacko({ authorDetails, posts }) {
           </ul>
         </div>
       </div>
-      {/* </AuthorsNavLayout> */}
     </>
   )
 }
