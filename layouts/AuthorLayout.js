@@ -10,7 +10,7 @@ export default function AuthorLayout({ children, frontMatter }) {
       <PageSEO title={`About - ${name}`} description={`About me - ${name}`} />
       <div className="divide-y">
         <div className="flex-start space-y-2 xl:grid xl:grid-cols-5 xl:gap-x-8 xl:space-y-0 pt-8 pb-8">
-          <div className="flex flex-col col-span-2 mr-auto items-center">
+          <div className="flex flex-col xl:col-span-2 mr-auto items-center">
             <Image
               src={avatar}
               alt="avatar"
@@ -29,7 +29,7 @@ export default function AuthorLayout({ children, frontMatter }) {
             </div>
           </div>
           {/* <div className="prose max-w-none pt-8 pb-8 dark:prose-dark xl:col-span-2">{children}</div> */}
-          <div className="xl:translate-y-1/4 xl:-translate-x-1/3 col-span-2">
+          <div className="ml-6 pt-12 xl:ml-0 xl:mr-0 xl:pt-0 xl:translate-y-1/4 xl:-translate-x-1/3 xl:col-span-2">
             <blockquote className="relative">
               <svg
                 class="absolute top-0 left-0 h-16 w-16 -translate-x-6 -translate-y-8 transform text-gray-100 dark:text-gray-700"
