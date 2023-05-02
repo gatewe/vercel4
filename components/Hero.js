@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <div className="max-w h-[500px] overflow-hidden rounded-lg border border-gray-200 bg-opacity-0 bg-[url('/static/hackers-resized-min-light2.svg')] bg-bottom shadow-[0_0_12px_rgba(0,0,0,0.6)] shadow-fuchsia-400/20 dark:border-gray-700 dark:bg-[url('/static/hackers-resized-min-dark.svg')]">
+    <div className="max-w h-[500px] overflow-hidden rounded-lg border border-gray-200 bg-opacity-0 bg-[url('/static/hackers-resized-min-light3.svg')] bg-bottom shadow-[0_0_12px_rgba(0,0,0,0.6)] shadow-fuchsia-400/20 dark:border-gray-700 dark:bg-[url('/static/hackers-resized-min-dark.svg')]">
       <div className="dark:bg-gray-700 bg-gray-600 pt-2 pb-2">
         <div className="position-absolute ml-4">
           <div className="mr-2 inline-block h-3 w-3 rounded-full bg-red-500"></div>
