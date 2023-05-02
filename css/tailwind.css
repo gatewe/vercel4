@@ -8,7 +8,7 @@
     display: inline-block;
     margin-bottom: -2px;
     margin-left: 5px;
-    @apply h-[30px] w-[7px] animate-cursor-blink bg-gray-900 dark:bg-white sm:h-[40px] sm:w-[8px] md:h-[48px] md:w-[9px];
+    @apply h-[30px] w-[7px] animate-cursor-blink bg-white dark:bg-white sm:h-[40px] sm:w-[8px] md:h-[48px] md:w-[9px];
   }
 
   .gradient-border-bg-dark {
