@@ -13,14 +13,14 @@
 
   .hero-bg::before{
     content: "";
-      background-image: url('/static/hackers-resized-min-light2.svg');
+      background-image: url('/static/hackers-resized-min-colored-svg.svg');
       background-size: cover;
       position: absolute;
       top: 0px;
       right: 0px;
       bottom: 0px;
       left: 0px;
-      @apply opacity-95 dark:opacity-60 bg-bottom
+      @apply opacity-100 dark:opacity-100 bg-bottom
   }
 
   .gradient-border-bg-dark {
