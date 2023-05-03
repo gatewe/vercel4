@@ -11,6 +11,18 @@
     @apply h-[30px] w-[7px] animate-cursor-blink bg-white dark:bg-white sm:h-[40px] sm:w-[8px] md:h-[48px] md:w-[9px];
   }
 
+  .hero-bg::before{
+    content: "";
+      background-image: url('/static/hackers-resized-min-light2.svg');
+      background-size: cover;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      @apply opacity-95 dark:opacity-60 bg-bottom
+  }
+
   .gradient-border-bg-dark {
     background: linear-gradient(#171717, #171717) padding-box,
       linear-gradient(45deg, #ec4899, #ef4444, #eab308) border-box;
