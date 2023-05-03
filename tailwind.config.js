@@ -69,7 +69,7 @@ module.exports = {
         'compass-spin': 'wave 3.1s linear infinite',
         'hero-image-float': 'floating 3s ease-in-out infinite',
         'cursor-blink': 'blink 1s infinite',
-        'anim-bg':'bgmove 5s ease-in-out infinite',
+        'anim-bg':'bgmove 3.5s ease-in-out infinite',
       },
       colors: {
         // primary: colors.cyan,
