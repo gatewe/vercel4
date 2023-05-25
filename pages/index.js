@@ -1,19 +1,31 @@
 import Link from '@/components/Link'
 import { PageSEO } from '@/components/SEO'
 import Tag from '@/components/Tag'
-import siteMetadata from '@/data/siteMetadata'
-import { getAllFilesFrontMatter } from '@/lib/mdx'
+import siteMetadata, { author } from '@/data/siteMetadata'
+import { getAllFilesFrontMatter, getFileBySlug } from '@/lib/mdx'
 import formatDate from '@/lib/utils/formatDate'
 import Hero from '@/components/Hero'
 import HomeWrapper from '@/components/HomeWrapper'
 import NewsletterForm from '@/components/NewsletterForm'
+import React from 'react'
 
 const MAX_DISPLAY = 5
 
 export async function getStaticProps() {
   const posts = await getAllFilesFrontMatter('blog')
 
-  return { props: { posts } }
+  const postsWithAuthors = await Promise.all(
+    posts.map(async (post) => {
+      const authorSlugs = post.authors
+      const authors =
+        authorSlugs && authorSlugs.length > 0
+          ? await Promise.all(authorSlugs.map((slug) => getFileBySlug('authors', slug)))
+          : []
+      return { ...post, authors }
+    })
+  )
+
+  return { props: { posts: postsWithAuthors } }
 }
 
 export default function Home({ posts }) {
@@ -34,7 +46,7 @@ export default function Home({ posts }) {
           <ul className="divide-y divide-gray-200 dark:divide-gray-700">
             {!posts.length && 'No posts found.'}
             {posts.slice(0, MAX_DISPLAY).map((frontMatter) => {
-              const { slug, date, title, summary, tags, author, category } = frontMatter
+              const { slug, date, title, summary, tags, category, authors } = frontMatter
               return (
                 <li key={slug} className="py-12">
                   <article>
@@ -69,14 +81,23 @@ export default function Home({ posts }) {
                           </div>
                         </div>
                         <div className="flex items-center text-base font-semibold leading-6">
-                          <Link
-                            href={`/blog/${slug}`}
-                            className="mr-2 text-gray-900 dark:text-gray-100"
-                            aria-label={`Read "${title}"`}
-                          >
-                            {author}
-                          </Link>
-                          <time className="text-gray-500 dark:text-gray-400" dateTime={date}>
+                          {authors.length > 0 ? (
+                            authors.map((author, index) => (
+                              <div key={author.frontMatter.slug}>
+                                {index > 0 && ', '}
+                                <Link
+                                  href={`/authors/${author.frontMatter.slug}`}
+                                  className="text-gray-900 dark:text-gray-100"
+                                >
+                                  {author.frontMatter.name}
+                                </Link>
+                              </div>
+                            ))
+                          ) : (
+                            <span>Anonymous</span>
+                          )}
+
+                          <time className="ml-2 text-gray-500 dark:text-gray-400" dateTime={date}>
                             {formatDate(date)}
                           </time>
                         </div>

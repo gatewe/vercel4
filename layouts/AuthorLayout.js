@@ -33,7 +33,7 @@ export default function AuthorLayout({ frontMatter }) {
           <div className="ml-5 pt-12 xl:col-span-2 xl:ml-0 xl:mr-0 xl:translate-y-1/4 xl:-translate-x-1/3 xl:pt-0">
             <blockquote className="relative">
               <svg
-                className="absolute top-0 left-0 h-16 w-16 -translate-x-6 -translate-y-8 transform text-gray-100 dark:text-gray-700 fill-gray-300 dark:fill-gray-600"
+                className="absolute top-0 left-0 h-16 w-16 -translate-x-6 -translate-y-8 transform fill-gray-300 text-gray-100 dark:fill-gray-600 dark:text-gray-700"
                 width="24"
                 height="27"
                 viewBox="0 0 24 27"
@@ -41,9 +41,7 @@ export default function AuthorLayout({ frontMatter }) {
                 xmlns="http://www.w3.org/2000/svg"
                 aria-hidden="true"
               >
-                <path
-                  d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z"
-                />
+                <path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" />
               </svg>
               <div className="relative z-10">
                 <span className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
