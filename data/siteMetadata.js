@@ -1,21 +1,21 @@
 const siteMetadata = {
   title: 'Compaas',
-  author: 'compaas - cloud navigator',
+  author: 'Compaas - cloud navigator',
   headerTitle: '',
   description: 'Latest blog posts.',
   language: 'en-us',
-  theme: 'dark', // system, dark or light
+  theme: 'dark', // system, dark or light -> if system is enabled then remove enableSystem={false} from ThemeProvider in _app.js
   siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app',
   siteRepo: 'https://github.com/timlrx/tailwind-nextjs-starter-blog',
   siteLogo: '/static/images/logo.png',
   image: '/static/images/avatar.png',
   socialBanner: '/static/images/twitter-card.png',
-  email: 'address@yoursite.com',
-  github: 'https://github.com',
-  twitter: 'https://twitter.com/Twitter',
+  email: 'hello@compaas.net',
+  // github: 'https://github.com',
+  twitter: 'https://twitter.com/compaasnet',
   facebook: 'https://facebook.com',
   youtube: 'https://youtube.com',
-  linkedin: 'https://www.linkedin.com',
+  linkedin: 'https://www.linkedin.com/company/compaasnet',
   locale: 'en-US',
   analytics: {
     // If you want to use an analytics provider you have to add it to the
