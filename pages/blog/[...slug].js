@@ -5,7 +5,7 @@ import { MDXLayoutRenderer } from '@/components/MDXComponents'
 import { formatSlug, getAllFilesFrontMatter, getFileBySlug, getFiles } from '@/lib/mdx'
 import ReadingBar from '@/components/ReadingBar'
 
-const DEFAULT_LAYOUT = 'PostLayout'
+const DEFAULT_LAYOUT = 'PostSimple'
 
 export async function getStaticPaths() {
   const posts = getFiles('blog')
