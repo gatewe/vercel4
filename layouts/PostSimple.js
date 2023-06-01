@@ -18,7 +18,8 @@ const discussUrl = (slug) =>
 const postDateTemplate = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
 
 export default function PostLayout({ frontMatter, authorDetails, next, prev, children }) {
-  const { slug, fileName, date, title, tags } = frontMatter
+  const { slug, fileName, date, title, tags, readingTime } = frontMatter
+  console.log(readingTime.text)
   return (
     <SectionContainer>
       <BlogSEO url={`${siteMetadata.siteUrl}/blog/${frontMatter.slug}`} {...frontMatter} />
@@ -71,6 +72,9 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                       <time className="font-bold" dateTime={date}>
                         &nbsp;{formatDate(date)}
                       </time>
+                      <span className="float-right text-base font-bold leading-6 text-gray-100 dark:text-gray-900 ">
+                        &nbsp;{readingTime.text}
+                      </span>
                     </dd>
                   </div>
                 </dl>
