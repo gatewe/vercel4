@@ -1,7 +1,7 @@
 const siteMetadata = {
   title: 'Compaas',
   author: 'Compaas - cloud navigator',
-  headerTitle: '',
+  headerTitle: 'Compaas',
   description: 'Latest blog posts.',
   language: 'en-us',
   theme: 'dark', // system, dark or light -> if system is enabled then remove enableSystem={false} from ThemeProvider in _app.js
