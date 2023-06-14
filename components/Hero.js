@@ -1,7 +1,7 @@
 export default function Hero() {
   return (
     <div className="hero-bg max-w relative h-[500px] overflow-hidden rounded-lg border border-gray-200 shadow-[0_0_12px_rgba(0,0,0,0.6)] shadow-fuchsia-600/40 dark:border-gray-700 dark:shadow-fuchsia-400/20">
-      <div className="relative bg-gray-600 pt-2 pb-2 dark:bg-gray-700">
+      <div className="relative bg-gray-600 pb-2 pt-2 dark:bg-gray-700">
         <div className="position-absolute ml-4">
           <div className="mr-2 inline-block h-3 w-3 rounded-full bg-red-500"></div>
           <div className="mr-2 inline-block h-3 w-3 rounded-full bg-orange-500"></div>

@@ -49,7 +49,7 @@ export default function Authors({ posts, authorDetails }) {
             mdxSource={mdxSource}
             frontMatter={frontMatter}
           />
-          <div className="pt-4 pb-4">
+          <div className="pb-4 pt-4">
             <fieldset className="border-t border-gray-700">
               <legend className="ml-auto pl-4 text-xl font-bold leading-8 tracking-tight text-gray-900 dark:text-gray-100">
                 Posts by {name.split(' ')[0]}
@@ -92,7 +92,7 @@ export default function Authors({ posts, authorDetails }) {
               )
             })}
             {posts.length > 0 && (
-              <div className="space-y-2 pt-6 pb-8 md:space-y-5">
+              <div className="space-y-2 pb-8 pt-6 md:space-y-5">
                 <nav className="flex justify-between">
                   {
                     <button

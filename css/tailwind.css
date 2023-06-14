@@ -11,16 +11,16 @@
     @apply h-[30px] w-[7px] animate-cursor-blink bg-white dark:bg-white sm:h-[40px] sm:w-[8px] md:h-[48px] md:w-[9px];
   }
 
-  .hero-bg::before{
-    content: "";
-      background-image: url('/static/hackers-resized-min-colored-svg.svg');
-      background-size: cover;
-      position: absolute;
-      top: 0px;
-      right: 0px;
-      bottom: 0px;
-      left: 0px;
-      @apply opacity-100 dark:opacity-90 bg-bottom
+  .hero-bg::before {
+    content: '';
+    background-image: url('/static/hackers-resized-min-colored-svg.svg');
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    @apply bg-bottom opacity-100 dark:opacity-90;
   }
 
   .gradient-border-bg-dark {
@@ -47,10 +47,10 @@
       #cc6b8e 38%,
       #a86aa4 50%,
       #8f6aae 62%,
-      #17A8E3 75%,
-      #41BBEC 87%,
-      #6FCCF0 100%
-      /* #6FCCF0 0%,
+      #17a8e3 75%,
+      #41bbec 87%,
+      #6fccf0 100%
+        /* #6FCCF0 0%,
       #41BBEC 13%,
       #17A8E3 25%,
       #8f6aae 38%,
@@ -71,11 +71,10 @@
       #f3a469 25%,
       #f18271 50%,
       #cc6b8e 75%,
-      #a86aa4 100%,
-      );
-      background-size: 100% 100%;
+      #a86aa4 100%
+    );
+    background-size: 100% 100%;
   }
-
 }
 
 .task-list-item::before {
